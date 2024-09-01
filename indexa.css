@@ -1,0 +1,55 @@
+body{
+    color: white;
+    background-color: black;
+    font-family: "Cabin", system-ui;
+    display: flex;
+    height: 1000px;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    padding: 5%;
+}
+.btnc{
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 100px;
+    color: white;
+    font-family: "Cabin", system-ui;
+    font-size: 25px;
+}
+#gend{
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 100px;
+    color: greenyellow;
+    font-family: "Cabin", system-ui;
+}
+#bend{
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 100px;
+    color: red;
+    font-family: "Cabin", system-ui;
+}
+#end{
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 100px;
+    color: blue;
+    font-family: "Cabin", system-ui;
+}
+.step{
+    display: none;
+}
+.step.ativo{
+    display: block;
+}
+#d{
+    text-align: center;
+}
+.v{
+    color: black;
+    font-size: 8px;
+}
+main{
+    max-width: 90%;
+}
+img{
+    max-width: 50%;
+}

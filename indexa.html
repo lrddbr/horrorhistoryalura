@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Knock Knock</title>
+    <link rel="stylesheet" href="indexa.css">
+</head>
+<body>
+    <main>
+        <div class="step ativo" id="step-0" name="d">
+            <i>
+                <img src="img/door1.jpg">
+            <i>
+                <p class="v">v</p>
+                <p>Você acorda assustado no seu quarto com um livro aberto no peito. Esta chovendo e você provavelmente cochilou. Você coloca o livro na prateleira e escuta um barulho vindo da cozinha.</p>
+            </i>
+            <input type="button" value="Ir até a cozinha" data-next="1" class="btnc">
+            <input type="button" value="Ignorar" data-next="2" class="btnc">
+        </div>
+        <div class="step" id="step-1" name="d">
+            <br>
+            <i>
+                <img src="img/fridge1.jpg">
+                <p>Você se levanta da cama bem de vagar. Tenta abrir a porta levemente mas não consegue evitar seu rangido que ecoa por todo o apartamento. Ao acender a luz da cozinha, percebe não haver ninguém nela.</p>
+            </i>
+            <input type="button" value="continuar averiguando" data-next="3" class="btnc">
+            <input type="button" value="Voltar para o quarto" data-next="4" class="btnc">
+        </div>
+        <div class="step" id="step-2" name="d">
+            <br>
+            <i>
+                <img src="img/door1.jpg">
+                <p><b>> "ashuahwugd"</b> Você escuta seu nome sendo murmurado na porta. Você tenta não fazer barulho e então escuta as pegadas se afastando da porta.</p>
+            </i>
+            <input type="button" value="Não fazer nada" data-next="5" class="btnc">
+            <input type="button" value="Abrir a porta" data-next="4" class="btnc">
+        </div>
+        <div class="step" id="step-3" name="d">
+            <br>
+            <i>
+                <img src="img/bloddydoor1.jpg">
+                <p>Você presume que, caso haja alguem, a pessoa agora deve estar na sala ou no banheiro. Você vai à sala. Há uma marca de sangue intensa na porta.</p>
+            </i>
+            <input type="button" value="Continuar averiguando" data-next="6" class="btnc">
+            <input type="button" value="Voltar e ligar para a policia" data-next="4" class="btnc">
+        </div>
+        <div class="step" id="step-4" name="d">
+            <br>
+            <i>
+                <img src="img/door1.jpg">
+                <p>Você respira fundo e junta coragem. Você vai em direção da porta do quarto. Ao abri-la, um homem com um machado pula e te acerta com ele.</p>
+            </i>
+            <input type="button" value="Correr" data-next="8" class="btnc">
+        </div>
+        <div class="step" id="step-5" name="d">
+            <br>
+            <i>
+                <img src="img/window1.jpg">
+                <p>Com medo, você conclui que precisa fugir e chamar por ajuda. Há uma janela no seu quarto. Imediatamente você percebe não ser uma boa ideia pois a sacada esta a cinco andares do chão.</p>
+            </i>
+            <input type="button" value="Ir pela porta da frente" data-next="4" class="btnc">
+            <input type="button" value="Tentar pular a janela mesmo assim" data-next="9" class="btnc">
+        </div>
+        <div class="step" id="step-6" name="d">
+            <br>
+            <i>
+                <img src="img/sofa1.jpg">
+                <p>Você continua andando pelo apartamento. Há barulhos de pegadas atras de você. Você vira assustado e percebe haver um homem com um machado que pula na sua direção.</p>
+            </i>
+            <input type="button" value="Correr até a porta" data-next="10" class="btnc">
+        </div>
+        <div class="step" id="step-8" name="d">
+            <br>
+            <i>
+                <img src="img/noblod-door1.jpg">
+                <p>O homem te acerta com o machado enquanto desvia dele. Com muito esforço, você consegue chegar à porta mas é acertado novamente. Você apaga.</p>
+            </i>
+            <input type="button" value="Fim" data-next="13" class="btnc" id="bend">
+        </div>
+        <div class="step" id="step-9" name="d">
+            <br>
+            <i>
+                <img src="img/window1.jpg">
+                <p>Você abre a janela e ainda esta chuvendo forte. Respira fundo e pula. Ao cair no chão, você desmaia.</p>
+            </i>
+            <input type="button" value="Continuar" data-next="11" class="btnc">
+        </div>
+        <div class="step" id="step-10" name="d">
+            <br>
+            <i>
+                <img src="img/noblod-door1.jpg">
+                <p>Agora você esta correndo até a saida. Ao chegar na porta você a abre. Imediatamente após sair pela porta você apaga.</p>
+            </i>
+            <input type="button" value="Continuar" data-next="11" class="btnc">
+        </div>
+        <div class="step" id="step-11" name="d">
+            <br>
+            <i>
+                <img src="img/door1.jpg">
+                <p>Você acorda assustado no seu quarto com um livro aberto no peito. Esta chovendo e você provavelmente cochilou. Você coloca o livro na prateleira e escuta um barulho vindo da cozinha.</p>
+            </i>
+            <input type="button" value="Fim" data-next="12" class="btnc" id="end">
+        </div>
+        <div class="step" id="step-12" name="d">
+            <br>
+            <i>
+                <p>Recomeçar?</p>
+            </i>
+            <input type="button" value="Sim" data-next="0" class="btnc" id="end">
+            <input type="button" value="Não" data-next="14" class="btnc" id="end">
+        </div>
+        <div class="step" id="step-13" name="d">
+            <br>
+            <i>
+                <p>Fim de Jogo</p>
+                <p>Recomeçar?</p>
+            </i>
+            <input type="button" value="Sim" data-next="0" class="btnc" id="bend">
+            <input type="button" value="Não" data-next="14" class="btnc" id="bend">
+        </div>
+        <div class="step" id="step-14" name="d">
+            <br>
+            <i>
+                <p>Feito por Erick Cardoso</p>
+            </i>
+        </div>
+    </main>
+    <script src="indexa.js"></script>
+</body>
+</html>
